@@ -1,0 +1,285 @@
+/* ==========================================================================
+   Rachô — pages.css
+   Estilos específicos de cada tela.
+   ========================================================================== */
+
+/* ==========================================================================
+   Login / cadastro
+   ========================================================================== */
+
+.tela-login {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--fundo);
+}
+
+.login__vitrine {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--e-7) var(--e-6);
+  background: linear-gradient(150deg, var(--petroleo) 0%, #123449 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.login__vitrine::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -140px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: rgba(255, 107, 53, .18);
+}
+
+.login__vitrine h2 {
+  font-size: var(--txt-3xl);
+  max-width: 14ch;
+  margin-bottom: var(--e-3);
+}
+
+.login__vitrine p { color: rgba(255, 255, 255, .78); max-width: 38ch; }
+
+.login__provas {
+  display: flex;
+  gap: var(--e-6);
+  position: relative;
+  z-index: 1;
+}
+
+.login__provas strong {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: var(--txt-2xl);
+  color: var(--laranja);
+}
+
+.login__provas span { font-size: var(--txt-sm); color: rgba(255, 255, 255, .78); }
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--e-6) var(--e-4);
+}
+
+.login__caixa {
+  width: 100%;
+  max-width: 400px;
+  margin-inline: auto;
+  display: grid;
+  gap: var(--e-4);
+}
+
+.login__caixa .marca { justify-content: center; margin-bottom: var(--e-2); }
+
+.login__titulo { text-align: center; }
+.login__titulo p { color: var(--texto-fraco); font-size: var(--txt-sm); margin-top: var(--e-1); }
+
+.login__divisor {
+  display: flex;
+  align-items: center;
+  gap: var(--e-3);
+  color: var(--texto-fraco);
+  font-size: var(--txt-xs);
+}
+
+.login__divisor::before,
+.login__divisor::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--borda);
+}
+
+@media (min-width: 900px) {
+  .tela-login { grid-template-columns: 1.1fr 1fr; }
+  .login__vitrine { display: flex; }
+  .login__form { padding: var(--e-7) var(--e-6); }
+}
+
+/* ==========================================================================
+   Detalhe da carona
+   ========================================================================== */
+
+.detalhe__capa {
+  display: grid;
+  gap: var(--e-4);
+}
+
+.motorista-card {
+  display: flex;
+  align-items: center;
+  gap: var(--e-4);
+}
+
+.motorista-card__info { flex: 1; min-width: 0; }
+.motorista-card__info h3 { font-size: var(--txt-md); }
+.motorista-card__info p { font-size: var(--txt-xs); color: var(--texto-fraco); }
+
+.passageiros { display: grid; gap: var(--e-3); }
+
+.passageiro {
+  display: flex;
+  align-items: center;
+  gap: var(--e-3);
+  font-size: var(--txt-sm);
+}
+
+.passageiro .vaga-livre {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 2px dashed var(--borda);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto-fraco);
+  flex-shrink: 0;
+}
+
+.regras { display: grid; gap: var(--e-3); }
+.regras li {
+  display: flex;
+  align-items: center;
+  gap: var(--e-3);
+  font-size: var(--txt-sm);
+}
+.regras .material-symbols-rounded { font-size: 20px; color: var(--petroleo); }
+
+/* Espaço extra quando há barra de ação fixa acima da navegação inferior */
+.conteudo--com-rodape { padding-bottom: 200px; }
+
+@media (min-width: 1024px) {
+  .conteudo--com-rodape { padding-bottom: var(--e-7); }
+}
+
+/* ==========================================================================
+   Minhas caronas
+   ========================================================================== */
+
+.item-viagem {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--e-4);
+  align-items: center;
+}
+
+.data-bloco {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  padding: var(--e-2);
+  border-radius: var(--raio-md);
+  background: var(--petroleo-fraco);
+  color: var(--petroleo);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.data-bloco strong {
+  font-family: var(--fonte-titulo);
+  font-size: var(--txt-lg);
+  line-height: 1;
+}
+
+.data-bloco span { font-size: var(--txt-xs); text-transform: uppercase; }
+
+.item-viagem__info { min-width: 0; }
+.item-viagem__info h3 { font-size: var(--txt-sm); }
+.item-viagem__info p { font-size: var(--txt-xs); color: var(--texto-fraco); }
+
+.vazio {
+  display: grid;
+  place-items: center;
+  gap: var(--e-3);
+  padding: var(--e-7) var(--e-4);
+  text-align: center;
+  color: var(--texto-fraco);
+}
+
+.vazio .material-symbols-rounded { font-size: 48px; color: var(--borda); }
+
+/* ==========================================================================
+   Perfil
+   ========================================================================== */
+
+.perfil__capa {
+  display: grid;
+  justify-items: center;
+  gap: var(--e-3);
+  text-align: center;
+  padding: var(--e-5) var(--e-4);
+}
+
+.perfil__capa h1 { font-size: var(--txt-xl); }
+.perfil__capa p { color: var(--texto-fraco); font-size: var(--txt-sm); }
+
+.perfil__numeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--e-3);
+  text-align: center;
+  margin-top: var(--e-4);
+  width: 100%;
+}
+
+.perfil__numeros div {
+  padding: var(--e-3);
+  border-radius: var(--raio-md);
+  background: var(--fundo);
+}
+
+.perfil__numeros strong {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: var(--txt-lg);
+  color: var(--petroleo);
+}
+
+.perfil__numeros span { font-size: var(--txt-xs); color: var(--texto-fraco); }
+
+.avaliacao {
+  display: grid;
+  gap: var(--e-2);
+  padding-bottom: var(--e-4);
+  border-bottom: 1px solid var(--borda);
+}
+
+.avaliacao:last-child { border-bottom: none; padding-bottom: 0; }
+
+.avaliacao__topo {
+  display: flex;
+  align-items: center;
+  gap: var(--e-3);
+}
+
+.avaliacao__topo .nome { font-weight: 600; font-size: var(--txt-sm); }
+.avaliacao__topo .quando { font-size: var(--txt-xs); color: var(--texto-fraco); margin-left: auto; }
+.avaliacao p { font-size: var(--txt-sm); color: var(--texto-fraco); }
+
+.carro {
+  display: flex;
+  align-items: center;
+  gap: var(--e-4);
+}
+
+.carro__icone {
+  display: grid;
+  place-items: center;
+  width: 52px; height: 52px;
+  border-radius: var(--raio-md);
+  background: var(--laranja-claro);
+  color: var(--laranja-escuro);
+  flex-shrink: 0;
+}
+
+.carro__icone .material-symbols-rounded { font-size: 28px; }
+
+@media (min-width: 1024px) {
+  .perfil__capa { justify-items: start; text-align: left; }
+  .perfil__numeros { max-width: 420px; }
+}

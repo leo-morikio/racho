@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferecer carona · Rachô</title>
+  <meta name="description" content="Publique sua carona e divida os custos da viagem.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topo">
+    <div class="linha gap-2">
+      <a class="btn-icone" href="index.html" aria-label="Voltar">
+        <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+      </a>
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="">
+        <span>Rach<span class="destaque">ô</span></span>
+      </a>
+    </div>
+    <a href="perfil.html" aria-label="Meu perfil">
+      <span class="avatar avatar--sm">LM</span>
+    </a>
+  </header>
+
+  <nav class="lateral" aria-label="Menu principal">
+    <a href="index.html">
+      <span class="material-symbols-rounded" aria-hidden="true">search</span> Buscar caronas
+    </a>
+    <a href="oferecer.html" aria-current="page">
+      <span class="material-symbols-rounded" aria-hidden="true">add_circle</span> Oferecer carona
+    </a>
+    <a href="minhas.html">
+      <span class="material-symbols-rounded" aria-hidden="true">event_note</span> Minhas caronas
+    </a>
+    <a href="perfil.html">
+      <span class="material-symbols-rounded" aria-hidden="true">person</span> Perfil
+    </a>
+    <hr class="separador">
+    <a href="login.html">
+      <span class="material-symbols-rounded" aria-hidden="true">logout</span> Sair
+    </a>
+  </nav>
+
+  <main class="conteudo">
+
+    <div class="pagina-cabecalho">
+      <h1>Oferecer uma carona</h1>
+      <p>Publique seu trajeto e encontre quem vai para o mesmo lado.</p>
+    </div>
+
+    <form class="pilha gap-4">
+
+      <!-- Trajeto -->
+      <section class="card">
+        <fieldset>
+          <legend>Trajeto</legend>
+
+          <div class="form-grid">
+            <div class="campo col-2">
+              <label for="origem">Ponto de partida</label>
+              <div class="entrada-icone">
+                <span class="material-symbols-rounded" aria-hidden="true">trip_origin</span>
+                <input class="entrada" type="text" id="origem" placeholder="Ex.: Portaria do campus">
+              </div>
+            </div>
+
+            <div class="campo col-2">
+              <label for="destino">Destino</label>
+              <div class="entrada-icone">
+                <span class="material-symbols-rounded" aria-hidden="true">place</span>
+                <input class="entrada" type="text" id="destino" placeholder="Ex.: Rodoviária de Campinas">
+              </div>
+            </div>
+
+            <div class="campo col-2">
+              <label for="paradas">Paradas no caminho <span class="texto-fraco">(opcional)</span></label>
+              <input class="entrada" type="text" id="paradas" placeholder="Ex.: Rio Claro, Limeira">
+              <span class="dica">Separe por vírgula. Ajuda quem mora no caminho a achar sua carona.</span>
+            </div>
+          </div>
+        </fieldset>
+      </section>
+
+      <!-- Data e hora -->
+      <section class="card">
+        <fieldset>
+          <legend>Quando</legend>
+
+          <div class="form-grid">
+            <div class="campo">
+              <label for="data">Data</label>
+              <input class="entrada" type="date" id="data" value="2026-09-25">
+            </div>
+
+            <div class="campo">
+              <label for="hora">Horário de saída</label>
+              <input class="entrada" type="time" id="hora" value="18:00">
+            </div>
+
+            <div class="campo col-2">
+              <div class="switch">
+                <div>
+                  <div class="negrito">Repetir toda semana</div>
+                  <div class="txt-xs texto-fraco">A carona é republicada automaticamente no mesmo dia e horário.</div>
+                </div>
+                <input type="checkbox" id="repetir">
+                <label class="trilho" for="repetir"><span class="sr-only">Repetir toda semana</span></label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </section>
+
+      <!-- Vagas e valor -->
+      <section class="card">
+        <fieldset>
+          <legend>Vagas e valor</legend>
+
+          <div class="form-grid">
+            <div class="campo col-2">
+              <label>Vagas disponíveis</label>
+              <div class="pilulas">
+                <input type="radio" name="vagas" id="v1"><label for="v1">1</label>
+                <input type="radio" name="vagas" id="v2"><label for="v2">2</label>
+                <input type="radio" name="vagas" id="v3" checked><label for="v3">3</label>
+                <input type="radio" name="vagas" id="v4"><label for="v4">4</label>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="valor">Valor por pessoa</label>
+              <div class="entrada-icone">
+                <span class="material-symbols-rounded" aria-hidden="true">payments</span>
+                <input class="entrada" type="number" id="valor" placeholder="25" min="0" step="5">
+              </div>
+              <span class="dica">Sugestão para esse trajeto: R$ 22 a R$ 28.</span>
+            </div>
+
+            <div class="campo">
+              <label for="pagamento">Forma de pagamento</label>
+              <select class="entrada" id="pagamento">
+                <option>Pix no embarque</option>
+                <option>Dinheiro</option>
+                <option>Combinar com o passageiro</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </section>
+
+      <!-- Carro e preferências -->
+      <section class="card">
+        <fieldset>
+          <legend>Carro e combinados</legend>
+
+          <div class="form-grid">
+            <div class="campo">
+              <label for="carro">Veículo</label>
+              <select class="entrada" id="carro">
+                <option>Fiat Argo · Branco · BRA2E19</option>
+                <option>Adicionar outro veículo…</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="bagagem">Bagagem</label>
+              <select class="entrada" id="bagagem">
+                <option>Mochila ou mala de mão</option>
+                <option>Aceita mala grande</option>
+                <option>Sem espaço para bagagem</option>
+              </select>
+            </div>
+
+            <div class="campo col-2">
+              <label>Preferências</label>
+              <div class="pilulas">
+                <input type="checkbox" id="p1" checked><label for="p1">Ar-condicionado</label>
+                <input type="checkbox" id="p2"><label for="p2">Aceita pet</label>
+                <input type="checkbox" id="p3" checked><label for="p3">Não fumante</label>
+                <input type="checkbox" id="p4"><label for="p4">Só mulheres</label>
+                <input type="checkbox" id="p5" checked><label for="p5">Playlist compartilhada</label>
+              </div>
+            </div>
+
+            <div class="campo col-2">
+              <label for="obs">Observações</label>
+              <textarea class="entrada" id="obs" placeholder="Ex.: saio pontualmente, encontro na portaria 15 minutos antes."></textarea>
+            </div>
+          </div>
+        </fieldset>
+      </section>
+
+      <div class="linha gap-3 mt-4" style="justify-content:flex-end;flex-wrap:wrap">
+        <a class="btn btn--contorno" href="index.html">Cancelar</a>
+        <button class="btn btn--grande" type="button">
+          <span class="material-symbols-rounded" aria-hidden="true">publish</span>
+          Publicar carona
+        </button>
+      </div>
+
+    </form>
+
+  </main>
+
+  <nav class="nav-inferior" aria-label="Menu principal">
+    <a href="index.html">
+      <span class="material-symbols-rounded" aria-hidden="true">search</span> Buscar
+    </a>
+    <a href="oferecer.html" aria-current="page">
+      <span class="material-symbols-rounded" aria-hidden="true">add_circle</span> Oferecer
+    </a>
+    <a href="minhas.html">
+      <span class="material-symbols-rounded" aria-hidden="true">event_note</span> Minhas
+    </a>
+    <a href="perfil.html">
+      <span class="material-symbols-rounded" aria-hidden="true">person</span> Perfil
+    </a>
+  </nav>
+
+</div>
+</body>
+</html>

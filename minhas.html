@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas caronas · Rachô</title>
+  <meta name="description" content="Suas viagens como motorista e como passageiro.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topo">
+    <a class="marca" href="index.html">
+      <img src="img/logo.svg" alt="">
+      <span>Rach<span class="destaque">ô</span></span>
+    </a>
+    <div class="linha gap-2">
+      <button class="btn-icone" type="button" aria-label="Notificações">
+        <span class="material-symbols-rounded" aria-hidden="true">notifications</span>
+      </button>
+      <a href="perfil.html" aria-label="Meu perfil">
+        <span class="avatar avatar--sm">LM</span>
+      </a>
+    </div>
+  </header>
+
+  <nav class="lateral" aria-label="Menu principal">
+    <a href="index.html">
+      <span class="material-symbols-rounded" aria-hidden="true">search</span> Buscar caronas
+    </a>
+    <a href="oferecer.html">
+      <span class="material-symbols-rounded" aria-hidden="true">add_circle</span> Oferecer carona
+    </a>
+    <a href="minhas.html" aria-current="page">
+      <span class="material-symbols-rounded" aria-hidden="true">event_note</span> Minhas caronas
+    </a>
+    <a href="perfil.html">
+      <span class="material-symbols-rounded" aria-hidden="true">person</span> Perfil
+    </a>
+    <hr class="separador">
+    <a href="login.html">
+      <span class="material-symbols-rounded" aria-hidden="true">logout</span> Sair
+    </a>
+  </nav>
+
+  <main class="conteudo">
+
+    <div class="pagina-cabecalho">
+      <h1>Minhas caronas</h1>
+      <p>Tudo o que você marcou, dos dois lados do volante.</p>
+    </div>
+
+    <!-- Pedidos recebidos (aparece acima das abas: precisa de ação) -->
+    <section class="secao">
+      <div class="secao__titulo">
+        <h2>Pedidos nas caronas que você oferece</h2>
+        <span class="badge badge--laranja">1 novo</span>
+      </div>
+
+      <div class="card">
+        <div class="linha gap-3 mb-4">
+          <span class="avatar">BL</span>
+          <div style="flex:1;min-width:0">
+            <div class="negrito txt-sm">Bruno Lacerda</div>
+            <div class="txt-xs texto-fraco">quer uma vaga em São Carlos → Campinas, 02/out · 18h00</div>
+          </div>
+        </div>
+        <div class="linha gap-3" style="flex-wrap:wrap">
+          <button class="btn btn--pequeno" type="button">Aceitar</button>
+          <button class="btn btn--contorno btn--pequeno" type="button">Recusar</button>
+          <button class="btn btn--texto btn--pequeno" type="button">Ver perfil</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abas -->
+    <div class="abas" role="tablist" aria-label="Tipo de participação">
+      <a href="#" role="tab" aria-selected="true">Como passageiro</a>
+      <a href="#" role="tab" aria-selected="false">Como motorista</a>
+    </div>
+
+    <!-- Próximas -->
+    <section class="secao">
+      <div class="secao__titulo">
+        <h2>Próximas</h2>
+        <span class="txt-sm texto-fraco">2 viagens</span>
+      </div>
+
+      <div class="pilha gap-3">
+
+        <a class="card card--link item-viagem" href="carona.html">
+          <div class="data-bloco">
+            <strong>25</strong>
+            <span>set</span>
+          </div>
+          <div class="item-viagem__info">
+            <h3>São Carlos → Campinas</h3>
+            <p>18h00 · Mariana Souza · R$ 25</p>
+            <span class="badge badge--sucesso mt-4">Vaga confirmada</span>
+          </div>
+          <span class="material-symbols-rounded texto-fraco" aria-hidden="true">chevron_right</span>
+        </a>
+
+        <a class="card card--link item-viagem" href="carona.html">
+          <div class="data-bloco">
+            <strong>28</strong>
+            <span>set</span>
+          </div>
+          <div class="item-viagem__info">
+            <h3>Vila Prado → Campus</h3>
+            <p>07h20 · Camila Barros · R$ 15</p>
+            <span class="badge badge--alerta mt-4">Aguardando resposta</span>
+          </div>
+          <span class="material-symbols-rounded texto-fraco" aria-hidden="true">chevron_right</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Histórico -->
+    <section class="secao">
+      <div class="secao__titulo">
+        <h2>Histórico</h2>
+        <button class="btn btn--texto btn--pequeno" type="button">Ver tudo</button>
+      </div>
+
+      <div class="pilha gap-3">
+
+        <div class="card item-viagem">
+          <div class="data-bloco" style="background:var(--fundo);color:var(--texto-fraco)">
+            <strong>12</strong>
+            <span>set</span>
+          </div>
+          <div class="item-viagem__info">
+            <h3>São Carlos → São Paulo</h3>
+            <p>07h00 · João Pedro Lima · R$ 40</p>
+          </div>
+          <button class="btn btn--contorno btn--pequeno" type="button">Avaliar</button>
+        </div>
+
+        <div class="card item-viagem">
+          <div class="data-bloco" style="background:var(--fundo);color:var(--texto-fraco)">
+            <strong>05</strong>
+            <span>set</span>
+          </div>
+          <div class="item-viagem__info">
+            <h3>Campus → Centro</h3>
+            <p>19h30 · Ana Nogueira · R$ 8</p>
+          </div>
+          <span class="estrelas">
+            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+            Você deu 5,0
+          </span>
+        </div>
+
+        <div class="card item-viagem">
+          <div class="data-bloco" style="background:var(--fundo);color:var(--texto-fraco)">
+            <strong>29</strong>
+            <span>ago</span>
+          </div>
+          <div class="item-viagem__info">
+            <h3>Araraquara → São Carlos</h3>
+            <p>21h00 · Rafael Ferreira · R$ 18</p>
+          </div>
+          <span class="estrelas">
+            <span class="material-symbols-rounded" aria-hidden="true">star</span>
+            Você deu 4,0
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Estado vazio (exemplo de tela sem conteúdo) -->
+    <section class="secao">
+      <div class="secao__titulo">
+        <h2>Caronas salvas</h2>
+      </div>
+      <div class="card vazio">
+        <span class="material-symbols-rounded" aria-hidden="true">bookmark</span>
+        <div>
+          <div class="negrito" style="color:var(--texto)">Nenhuma carona salva</div>
+          <div class="txt-sm">Toque no marcador de uma carona para guardá-la aqui.</div>
+        </div>
+        <a class="btn btn--contorno btn--pequeno" href="index.html">Procurar caronas</a>
+      </div>
+    </section>
+
+  </main>
+
+  <a class="fab" href="oferecer.html">
+    <span class="material-symbols-rounded" aria-hidden="true">add</span>
+    Oferecer
+  </a>
+
+  <nav class="nav-inferior" aria-label="Menu principal">
+    <a href="index.html">
+      <span class="material-symbols-rounded" aria-hidden="true">search</span> Buscar
+    </a>
+    <a href="oferecer.html">
+      <span class="material-symbols-rounded" aria-hidden="true">add_circle</span> Oferecer
+    </a>
+    <a href="minhas.html" aria-current="page">
+      <span class="material-symbols-rounded" aria-hidden="true">event_note</span> Minhas
+    </a>
+    <a href="perfil.html">
+      <span class="material-symbols-rounded" aria-hidden="true">person</span> Perfil
+    </a>
+  </nav>
+
+</div>
+</body>
+</html>

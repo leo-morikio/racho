@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil · Rachô</title>
+  <meta name="description" content="Perfil do usuário, avaliações e veículo cadastrado.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topo">
+    <a class="marca" href="index.html">
+      <img src="img/logo.svg" alt="">
+      <span>Rach<span class="destaque">ô</span></span>
+    </a>
+    <button class="btn-icone" type="button" aria-label="Configurações">
+      <span class="material-symbols-rounded" aria-hidden="true">settings</span>
+    </button>
+  </header>
+
+  <nav class="lateral" aria-label="Menu principal">
+    <a href="index.html">
+      <span class="material-symbols-rounded" aria-hidden="true">search</span> Buscar caronas
+    </a>
+    <a href="oferecer.html">
+      <span class="material-symbols-rounded" aria-hidden="true">add_circle</span> Oferecer carona
+    </a>
+    <a href="minhas.html">
+      <span class="material-symbols-rounded" aria-hidden="true">event_note</span> Minhas caronas
+    </a>
+    <a href="perfil.html" aria-current="page">
+      <span class="material-symbols-rounded" aria-hidden="true">person</span> Perfil
+    </a>
+    <hr class="separador">
+    <a href="login.html">
+      <span class="material-symbols-rounded" aria-hidden="true">logout</span> Sair
+    </a>
+  </nav>
+
+  <main class="conteudo">
+
+    <div class="duas-colunas">
+
+      <!-- Coluna principal -->
+      <div class="pilha gap-4">
+
+        <!-- Cabeçalho do perfil -->
+        <section class="card perfil__capa">
+          <span class="avatar avatar--xl">LM</span>
+          <div>
+            <h1>Leonardo Morikio</h1>
+            <p>Ciência da Computação · 8º semestre</p>
+          </div>
+
+          <div class="linha gap-2" style="flex-wrap:wrap;justify-content:center">
+            <span class="badge badge--sucesso">
+              <span class="material-symbols-rounded" aria-hidden="true" style="font-size:14px">verified</span>
+              E-mail institucional
+            </span>
+            <span class="badge">
+              <span class="material-symbols-rounded" aria-hidden="true" style="font-size:14px">badge</span>
+              CNH verificada
+            </span>
+          </div>
+
+          <div class="perfil__numeros">
+            <div>
+              <strong>4,8</strong>
+              <span>avaliação</span>
+            </div>
+            <div>
+              <strong>14</strong>
+              <span>viagens</span>
+            </div>
+            <div>
+              <strong>2025</strong>
+              <span>desde</span>
+            </div>
+          </div>
+
+          <a class="btn btn--contorno mt-4" href="#">
+            <span class="material-symbols-rounded" aria-hidden="true">edit</span>
+            Editar perfil
+          </a>
+        </section>
+
+        <!-- Sobre -->
+        <section class="card">
+          <h2 class="card__titulo mb-4">Sobre mim</h2>
+          <p class="txt-sm texto-fraco">
+            Sou aluno do BCC e vou pra Campinas quase todo fim de semana. Gosto de sair no
+            horário, ouço de tudo um pouco e topo dividir a playlist. Se precisar parar
+            pra comer no caminho, é só avisar.
+          </p>
+
+          <hr class="separador">
+
+          <dl class="lista-dados">
+            <div><dt>Conversa na viagem</dt><dd>Gosto de conversar</dd></div>
+            <div><dt>Música</dt><dd>Sempre rolando</dd></div>
+            <div><dt>Fumo</dt><dd>Não permitido</dd></div>
+            <div><dt>Pets</dt><dd>Aceito pequenos</dd></div>
+          </dl>
+        </section>
+
+        <!-- Avaliações -->
+        <section class="card">
+          <div class="secao__titulo">
+            <h2 class="card__titulo">Avaliações recebidas</h2>
+            <span class="estrelas">
+              <span class="material-symbols-rounded" aria-hidden="true">star</span>
+              4,8 de 11
+            </span>
+          </div>
+
+          <div class="pilha gap-4">
+
+            <article class="avaliacao">
+              <div class="avaliacao__topo">
+                <span class="avatar avatar--sm">BL</span>
+                <span class="nome">Bruno Lacerda</span>
+                <span class="quando">há 4 dias</span>
+              </div>
+              <span class="estrelas">
+                <span class="material-symbols-rounded" aria-hidden="true">star</span> 5,0
+              </span>
+              <p>Saiu no horário combinado e o carro estava impecável. Viagem tranquila, recomendo.</p>
+            </article>
+
+            <article class="avaliacao">
+              <div class="avaliacao__topo">
+                <span class="avatar avatar--sm">CB</span>
+                <span class="nome">Camila Barros</span>
+                <span class="quando">há 2 semanas</span>
+              </div>
+              <span class="estrelas">
+                <span class="material-symbols-rounded" aria-hidden="true">star</span> 5,0
+              </span>
+              <p>Super atencioso, ainda me deixou mais perto de casa. Pegaria carona de novo sem pensar.</p>
+            </article>
+
+            <article class="avaliacao">
+              <div class="avaliacao__topo">
+                <span class="avatar avatar--sm">DT</span>
+                <span class="nome">Diogo Tavares</span>
+                <span class="quando">há 1 mês</span>
+              </div>
+              <span class="estrelas">
+                <span class="material-symbols-rounded" aria-hidden="true">star</span> 4,0
+              </span>
+              <p>Boa viagem. Só atrasou uns minutinhos na saída, mas avisou antes no chat.</p>
+            </article>
+
+          </div>
+
+          <button class="btn btn--texto btn--bloco mt-5" type="button">Ver todas as avaliações</button>
+        </section>
+
+      </div>
+
+      <!-- Coluna lateral -->
+      <div class="pilha gap-4">
+
+        <!-- Veículo -->
+        <section class="card">
+          <h2 class="card__titulo mb-4">Meu veículo</h2>
+
+          <div class="carro">
+            <div class="carro__icone">
+              <span class="material-symbols-rounded" aria-hidden="true">directions_car</span>
+            </div>
+            <div>
+              <div class="negrito">Fiat Argo</div>
+              <div class="txt-sm texto-fraco">Branco · 2021 · BRA2E19</div>
+            </div>
+          </div>
+
+          <hr class="separador">
+
+          <dl class="lista-dados">
+            <div><dt>Lugares para passageiros</dt><dd>4</dd></div>
+            <div><dt>Porta-malas</dt><dd>Médio</dd></div>
+            <div><dt>Ar-condicionado</dt><dd>Sim</dd></div>
+          </dl>
+
+          <button class="btn btn--contorno btn--bloco mt-5" type="button">
+            <span class="material-symbols-rounded" aria-hidden="true">add</span>
+            Adicionar outro veículo
+          </button>
+        </section>
+
+        <!-- Verificações -->
+        <section class="card">
+          <h2 class="card__titulo mb-4">Verificações</h2>
+          <ul class="regras">
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true" style="color:var(--sucesso)">check_circle</span>
+              E-mail institucional confirmado
+            </li>
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true" style="color:var(--sucesso)">check_circle</span>
+              Telefone confirmado
+            </li>
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true" style="color:var(--sucesso)">check_circle</span>
+              CNH enviada e aprovada
+            </li>
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true" style="color:var(--texto-fraco)">radio_button_unchecked</span>
+              <span class="texto-fraco">Documento do veículo pendente</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Preferências -->
+        <section class="card">
+          <h2 class="card__titulo mb-4">Preferências</h2>
+
+          <div class="pilha gap-4">
+            <div class="switch">
+              <div>
+                <div class="negrito txt-sm">Avisar sobre caronas novas</div>
+                <div class="txt-xs texto-fraco">Nas rotas que você costuma fazer</div>
+              </div>
+              <input type="checkbox" id="not1" checked>
+              <label class="trilho" for="not1"><span class="sr-only">Avisar sobre caronas novas</span></label>
+            </div>
+
+            <div class="switch">
+              <div>
+                <div class="negrito txt-sm">Mostrar meu perfil na busca</div>
+                <div class="txt-xs texto-fraco">Outros estudantes podem te convidar</div>
+              </div>
+              <input type="checkbox" id="not2" checked>
+              <label class="trilho" for="not2"><span class="sr-only">Mostrar meu perfil na busca</span></label>
+            </div>
+
+            <div class="switch">
+              <div>
+                <div class="negrito txt-sm">Usar minha localização</div>
+                <div class="txt-xs texto-fraco">Para sugerir caronas perto de você</div>
+              </div>
+              <input type="checkbox" id="not3">
+              <label class="trilho" for="not3"><span class="sr-only">Usar minha localização</span></label>
+            </div>
+          </div>
+
+          <hr class="separador">
+
+          <a class="btn btn--texto btn--bloco" href="login.html">
+            <span class="material-symbols-rounded" aria-hidden="true">logout</span>
+            Sair da conta
+          </a>
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <nav class="nav-inferior" aria-label="Menu principal">
+    <a href="index.html">
+      <span class="material-symbols-rounded" aria-hidden="true">search</span> Buscar
+    </a>
+    <a href="oferecer.html">
+      <span class="material-symbols-rounded" aria-hidden="true">add_circle</span> Oferecer
+    </a>
+    <a href="minhas.html">
+      <span class="material-symbols-rounded" aria-hidden="true">event_note</span> Minhas
+    </a>
+    <a href="perfil.html" aria-current="page">
+      <span class="material-symbols-rounded" aria-hidden="true">person</span> Perfil
+    </a>
+  </nav>
+
+</div>
+</body>
+</html>

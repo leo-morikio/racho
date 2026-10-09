@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariana Souza · Rachô</title>
+  <meta name="description" content="Perfil público da motorista, avaliações e caronas oferecidas.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topo">
+    <div class="linha gap-2">
+      <a class="btn-icone" href="carona.html" aria-label="Voltar">
+        <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+      </a>
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="">
+        <span>Rach<span class="destaque">ô</span></span>
+      </a>
+    </div>
+    <a href="perfil.html" aria-label="Meu perfil">
+      <span class="avatar avatar--sm">LM</span>
+    </a>
+  </header>
+
+  <nav class="lateral" aria-label="Menu principal">
+    <a href="index.html" aria-current="page">
+      <span class="material-symbols-rounded" aria-hidden="true">search</span> Buscar caronas
+    </a>
+    <a href="oferecer.html">
+      <span class="material-symbols-rounded" aria-hidden="true">add_circle</span> Oferecer carona
+    </a>
+    <a href="minhas.html">
+      <span class="material-symbols-rounded" aria-hidden="true">event_note</span> Minhas caronas
+    </a>
+    <a href="perfil.html">
+      <span class="material-symbols-rounded" aria-hidden="true">person</span> Perfil
+    </a>
+    <hr class="separador">
+    <a href="login.html">
+      <span class="material-symbols-rounded" aria-hidden="true">logout</span> Sair
+    </a>
+  </nav>
+
+  <main class="conteudo">
+
+    <div class="duas-colunas">
+
+      <!-- Coluna principal -->
+      <div class="pilha gap-4">
+
+        <!-- Cabeçalho do perfil -->
+        <section class="card perfil__capa">
+          <span class="avatar avatar--xl">MS</span>
+          <div>
+            <h1>Mariana Souza</h1>
+            <p>Engenharia de Materiais · 6º semestre</p>
+          </div>
+
+          <div class="linha gap-2" style="flex-wrap:wrap;justify-content:center">
+            <span class="badge badge--sucesso">
+              <span class="material-symbols-rounded" aria-hidden="true" style="font-size:14px">verified</span>
+              E-mail institucional
+            </span>
+            <span class="badge">
+              <span class="material-symbols-rounded" aria-hidden="true" style="font-size:14px">badge</span>
+              CNH verificada
+            </span>
+          </div>
+
+          <div class="perfil__numeros">
+            <div>
+              <strong>4,9</strong>
+              <span>avaliação</span>
+            </div>
+            <div>
+              <strong>37</strong>
+              <span>viagens</span>
+            </div>
+            <div>
+              <strong>2024</strong>
+              <span>desde</span>
+            </div>
+          </div>
+
+          <button class="btn btn--contorno mt-4" type="button">
+            <span class="material-symbols-rounded" aria-hidden="true">chat</span>
+            Enviar mensagem
+          </button>
+        </section>
+
+        <!-- Sobre -->
+        <section class="card">
+          <h2 class="card__titulo mb-4">Sobre a Mariana</h2>
+          <p class="txt-sm texto-fraco">
+            Faço Materiais e volto pra Campinas toda sexta à tarde. Prefiro sair do campus,
+            mas posso pegar alguém no caminho se combinar antes. Viagem tranquila, sem pressa
+            e com parada pra café em Rio Claro.
+          </p>
+
+          <hr class="separador">
+
+          <dl class="lista-dados">
+            <div><dt>Conversa na viagem</dt><dd>Depende do dia</dd></div>
+            <div><dt>Música</dt><dd>Playlist compartilhada</dd></div>
+            <div><dt>Fumo</dt><dd>Não permitido</dd></div>
+            <div><dt>Pets</dt><dd>Não aceito</dd></div>
+          </dl>
+        </section>
+
+        <!-- Avaliações -->
+        <section class="card">
+          <div class="secao__titulo">
+            <h2 class="card__titulo">Avaliações recebidas</h2>
+            <span class="estrelas">
+              <span class="material-symbols-rounded" aria-hidden="true">star</span>
+              4,9 de 31
+            </span>
+          </div>
+
+          <div class="pilha gap-4">
+
+            <article class="avaliacao">
+              <div class="avaliacao__topo">
+                <span class="avatar avatar--sm">TG</span>
+                <span class="nome">Thiago Gomes</span>
+                <span class="quando">há 1 semana</span>
+              </div>
+              <span class="estrelas">
+                <span class="material-symbols-rounded" aria-hidden="true">star</span> 5,0
+              </span>
+              <p>Motorista cuidadosa e pontual. Esperou eu chegar na portaria sem reclamar.</p>
+            </article>
+
+            <article class="avaliacao">
+              <div class="avaliacao__topo">
+                <span class="avatar avatar--sm">LM</span>
+                <span class="nome">Leonardo Morikio</span>
+                <span class="quando">há 2 semanas</span>
+              </div>
+              <span class="estrelas">
+                <span class="material-symbols-rounded" aria-hidden="true">star</span> 5,0
+              </span>
+              <p>Combinado certinho pelo chat e chegada no horário previsto. Recomendo.</p>
+            </article>
+
+            <article class="avaliacao">
+              <div class="avaliacao__topo">
+                <span class="avatar avatar--sm">AN</span>
+                <span class="nome">Ana Nogueira</span>
+                <span class="quando">há 1 mês</span>
+              </div>
+              <span class="estrelas">
+                <span class="material-symbols-rounded" aria-hidden="true">star</span> 4,5
+              </span>
+              <p>Carro confortável e boa conversa. O porta-malas é pequeno pra mala grande.</p>
+            </article>
+
+          </div>
+
+          <button class="btn btn--texto btn--bloco mt-5" type="button">Ver todas as avaliações</button>
+        </section>
+
+      </div>
+
+      <!-- Coluna lateral -->
+      <div class="pilha gap-4">
+
+        <!-- Próximas caronas -->
+        <section class="card">
+          <h2 class="card__titulo mb-4">Próximas caronas</h2>
+
+          <div class="pilha gap-3">
+            <a class="card card--link item-viagem" href="carona.html">
+              <div class="data-bloco">
+                <strong>25</strong>
+                <span>set</span>
+              </div>
+              <div class="item-viagem__info">
+                <h3>São Carlos → Campinas</h3>
+                <p>18h00 · 3 vagas · R$ 25</p>
+              </div>
+              <span class="material-symbols-rounded texto-fraco" aria-hidden="true">chevron_right</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Veículo -->
+        <section class="card">
+          <h2 class="card__titulo mb-4">Veículo</h2>
+
+          <div class="carro">
+            <div class="carro__icone">
+              <span class="material-symbols-rounded" aria-hidden="true">directions_car</span>
+            </div>
+            <div>
+              <div class="negrito">Chevrolet Onix</div>
+              <div class="txt-sm texto-fraco">Prata · 2019</div>
+            </div>
+          </div>
+
+          <hr class="separador">
+
+          <dl class="lista-dados">
+            <div><dt>Lugares para passageiros</dt><dd>4</dd></div>
+            <div><dt>Porta-malas</dt><dd>Médio</dd></div>
+            <div><dt>Ar-condicionado</dt><dd>Sim</dd></div>
+          </dl>
+        </section>
+
+        <!-- Verificações -->
+        <section class="card">
+          <h2 class="card__titulo mb-4">Verificações</h2>
+          <ul class="regras">
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true" style="color:var(--sucesso)">check_circle</span>
+              E-mail institucional confirmado
+            </li>
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true" style="color:var(--sucesso)">check_circle</span>
+              Telefone confirmado
+            </li>
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true" style="color:var(--sucesso)">check_circle</span>
+              CNH enviada e aprovada
+            </li>
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true" style="color:var(--sucesso)">check_circle</span>
+              Documento do veículo aprovado
+            </li>
+          </ul>
+
+          <hr class="separador">
+
+          <button class="btn btn--texto btn--bloco" type="button">
+            <span class="material-symbols-rounded" aria-hidden="true">flag</span>
+            Denunciar perfil
+          </button>
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <nav class="nav-inferior" aria-label="Menu principal">
+    <a href="index.html" aria-current="page">
+      <span class="material-symbols-rounded" aria-hidden="true">search</span> Buscar
+    </a>
+    <a href="oferecer.html">
+      <span class="material-symbols-rounded" aria-hidden="true">add_circle</span> Oferecer
+    </a>
+    <a href="minhas.html">
+      <span class="material-symbols-rounded" aria-hidden="true">event_note</span> Minhas
+    </a>
+    <a href="perfil.html">
+      <span class="material-symbols-rounded" aria-hidden="true">person</span> Perfil
+    </a>
+  </nav>
+
+</div>
+</body>
+</html>

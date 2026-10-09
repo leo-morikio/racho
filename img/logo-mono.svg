@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Rachô">
+  <!-- versao monocromatica (para fundos coloridos): usa currentColor -->
+  <path d="M32 4C32 4 54 28 54 40a22 22 0 0 1-44 0C10 28 32 4 32 4Z"
+        fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M32 6v56" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+  <path d="M22 40h20m-7-7 7 7-7 7"
+        fill="none" stroke="currentColor" stroke-width="3.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

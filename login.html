@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar · Rachô</title>
+  <meta name="description" content="Rachô — caronas entre estudantes. Divida o trajeto, divida a gasolina.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <main class="tela-login">
+
+    <!-- Coluna de apresentação (aparece a partir de 900px) -->
+    <aside class="login__vitrine">
+      <div class="marca" style="color:#fff">
+        <img src="img/logo.svg" alt="">
+        <span>Rach<span class="destaque">ô</span></span>
+      </div>
+
+      <div style="position:relative;z-index:1">
+        <h2>Vai pra lá? Rachô.</h2>
+        <p>Caronas entre estudantes, com gente da sua universidade. Divida o trajeto, divida a gasolina.</p>
+      </div>
+
+      <div class="login__provas">
+        <div>
+          <strong>2.4 mil</strong>
+          <span>estudantes</span>
+        </div>
+        <div>
+          <strong>180</strong>
+          <span>caronas por semana</span>
+        </div>
+        <div>
+          <strong>4,8</strong>
+          <span>nota média</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Formulário -->
+    <section class="login__form">
+      <div class="login__caixa">
+
+        <div class="marca marca--grande">
+          <img src="img/logo.svg" alt="">
+          <span>Rach<span class="destaque">ô</span></span>
+        </div>
+
+        <div class="login__titulo">
+          <h1>Entrar na sua conta</h1>
+          <p>Use seu e-mail institucional para continuar</p>
+        </div>
+
+        <form>
+          <div class="form-grid">
+            <div class="campo col-2">
+              <label for="email">E-mail institucional</label>
+              <div class="entrada-icone">
+                <span class="material-symbols-rounded" aria-hidden="true">mail</span>
+                <input class="entrada" type="email" id="email" name="email"
+                       placeholder="voce@estudante.universidade.br" autocomplete="email">
+              </div>
+            </div>
+
+            <div class="campo col-2">
+              <label for="senha">Senha</label>
+              <div class="entrada-icone">
+                <span class="material-symbols-rounded" aria-hidden="true">lock</span>
+                <input class="entrada" type="password" id="senha" name="senha"
+                       placeholder="••••••••" autocomplete="current-password">
+              </div>
+            </div>
+
+            <div class="col-2 linha entre">
+              <label class="linha gap-2 txt-sm" for="lembrar" style="font-weight:400">
+                <input type="checkbox" id="lembrar"> Lembrar de mim
+              </label>
+              <a class="txt-sm negrito" href="#" style="color:var(--laranja-escuro)">Esqueci a senha</a>
+            </div>
+          </div>
+
+          <a class="btn btn--bloco btn--grande mt-5" href="index.html">
+            Entrar
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+        </form>
+
+        <div class="login__divisor">ou</div>
+
+        <a class="btn btn--contorno btn--bloco" href="index.html">
+          <span class="material-symbols-rounded" aria-hidden="true">school</span>
+          Entrar com a conta da universidade
+        </a>
+
+        <p class="txt-sm texto-fraco" style="text-align:center">
+          Ainda não tem conta?
+          <a class="negrito" href="#" style="color:var(--laranja-escuro)">Cadastre-se</a>
+        </p>
+
+        <p class="txt-xs texto-fraco" style="text-align:center">
+          Só aceitamos e-mails institucionais. É assim que garantimos que todo mundo
+          na plataforma é estudante de verdade.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
