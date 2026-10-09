@@ -3,6 +3,8 @@
 Aplicativo de caronas entre estudantes universitários.
 Projeto da disciplina **Desenvolvimento de Software para Web 2** — DC/UFSCar, 2026.2
 
+Link de acesso: https://leo-morikio.github.io/racho/
+
 > *Vai pra lá? Rachô.*
 
 ## Sobre
@@ -78,6 +80,8 @@ racho/
 
 Basta abrir `index.html` no navegador. Não há build nem dependências:
 apenas fontes e ícones carregados do Google Fonts.
+
+Link de acesso: https://leo-morikio.github.io/racho/
 
 ## Fase 2 (AA2) — planejado
 
