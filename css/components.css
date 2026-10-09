@@ -462,6 +462,33 @@ textarea.entrada { resize: vertical; min-height: 96px; }
 
 .form-grid .col-2 { grid-column: span 1; }
 
+/* Itens de grid têm min-width:auto por padrão e podem estourar a coluna */
+.form-grid > * { min-width: 0; }
+
+/* Data e hora: no iOS o campo nativo ignora width:100% e passa da caixa */
+input[type="date"].entrada,
+input[type="time"].entrada {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  min-width: 0;
+  min-height: 48px;
+}
+
+input[type="date"].entrada::-webkit-date-and-time-value,
+input[type="time"].entrada::-webkit-date-and-time-value {
+  text-align: left;
+}
+
+/* Botões de ação no fim de um formulário */
+.acoes-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--e-3);
+  margin-top: var(--e-4);
+}
+
 fieldset {
   border: none;
   padding: 0;
