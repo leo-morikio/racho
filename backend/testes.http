@@ -1,0 +1,22 @@
+GET http://localhost:3000/carona
+
+###
+
+GET http://localhost:3000/carona/1
+
+###
+
+GET http://localhost:3000/carona/99
+
+###
+
+POST http://localhost:3000/carona
+Content-Type: application/json
+
+{
+    "motorista": "Leonardo Morikio",
+    "destino": "Ribeirão Preto",
+    "data": "2026-11-06",
+    "vagas": 3,
+    "preco": 30
+}
