@@ -7,6 +7,13 @@ Link de acesso: https://leo-morikio.github.io/racho/
 
 > *Vai pra lá? Rachô.*
 
+## Integrantes
+
+| Nome | RA |
+|---|---|
+| Leonardo Poloni Berti Morikio | 823832 |
+| Matheus Marangoni Salomão | 821684 |
+
 ## Sobre
 
 O Rachô conecta estudantes que vão de carro para uma cidade ou para o campus
