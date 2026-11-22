@@ -2,8 +2,8 @@ import express from 'express';
 import cors from 'cors';
 
 const app = express();
-app.use(cors());          // deixa o front-end (outra porta) chamar este servidor
-app.use(express.json());  // lê o JSON enviado no corpo da requisição (req.body)
+app.use(cors());          
+app.use(express.json()); 
 
 // Os dados ficam em memória: ao reiniciar o servidor, voltam a ser estes
 const caronas = [
