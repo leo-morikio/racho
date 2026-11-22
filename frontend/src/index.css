@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Identidade visual do Rachô (a mesma da AA1), transformada em tema do Tailwind.
+   Cada variável vira classes: --color-laranja → bg-laranja, text-laranja...
+   --font-titulo → font-titulo */
+@theme {
+  --color-laranja: #FF6B35;
+  --color-laranja-escuro: #E55524;
+  --color-laranja-claro: #FFF0EA;
+  --color-petroleo: #1B4965;
+  --color-fundo: #F7F7F7;
+  --color-texto: #1E1E1E;
+  --color-texto-fraco: #6B7280;
+  --color-sucesso: #2E9E6A;
+
+  --font-titulo: "Poppins", sans-serif;
+  --font-corpo: "Inter", sans-serif;
+}
+
+body {
+  @apply bg-fundo text-texto font-corpo;
+}
+
+/* Ícones Material: largura fixa para o nome do ícone não aparecer antes da fonte carregar */
+.material-symbols-rounded {
+  width: 1em;
+  overflow: hidden;
+}
